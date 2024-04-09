@@ -10,21 +10,25 @@ Set up the following Linux infrastructure:
 
 One server (no GUI) running the following services:
 
-DHCP (one scope serving the local internal network) isc-dhcp-server
-DNS (resolve internal resources, a redirector is used for external resources) bind
-HTTP+ mariadb (internal website running GLPI)
+- DHCP (one scope serving the local internal network) isc-dhcp-server
+- DNS (resolve internal resources, a redirector is used for external resources) bind
+- HTTP+ mariadb (internal website running GLPI)
+
 Required
 Weekly backup the configuration files for each service into one single compressed archive
 The server is remotely manageable (SSH)
+
 Optional
 Backups are placed on a partition located on separate disk, this partition must be mounted for the backup, then unmounted
 One workstation running a desktop environment and the following apps:
 
-LibreOffice
-Gimp
-Mullvad browser
+- LibreOffice
+- Gimp
+- Mullvad browser
+
 Required
 This workstation uses automatic addressing
 The /home folder is located on a separate partition, same disk
+
 Optional
 Propose and implement a solution to remotely help a user
